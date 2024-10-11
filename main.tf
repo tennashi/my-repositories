@@ -15,4 +15,6 @@ resource "github_repository" "my_repositories" {
   visibility = "public"
 
   has_issues = true
+
+  delete_branch_on_merge = true
 }
