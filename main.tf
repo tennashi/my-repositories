@@ -7,3 +7,10 @@ terraform {
 }
 
 provider "github" {}
+
+resource "github_repository" "my_repositories" {
+  name = "my-repositories"
+  description = "My git repositories"
+
+  visibility = "public"
+}
