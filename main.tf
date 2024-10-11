@@ -13,4 +13,6 @@ resource "github_repository" "my_repositories" {
   description = "My git repositories"
 
   visibility = "public"
+
+  has_issues = true
 }
